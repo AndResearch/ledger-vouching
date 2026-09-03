@@ -1,0 +1,37 @@
+[project]
+name = "ledger-vouching"
+version = "0.0.1"
+description = "Oracleless grounding ledger voucher — an OpenAI-compatible proxy that enforces output grounding on someone else's agent loop without touching its code."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Shinya Kouda", email = "shinya.kouda@and-research.com" }]
+requires-python = ">=3.11"
+# Deliberately minimal: the ledger voucher must be installable standalone, with NO
+# dependency on its predecessor projects. Φ (grounding.py) is a copied pure
+# function set; everything else is stdlib + these three.
+dependencies = [
+    "fastapi>=0.110",
+    "httpx>=0.27",
+    "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "uvicorn>=0.29",
+]
+
+[project.urls]
+Homepage = "https://and-research.com"
+Repository = "https://github.com/AndResearch/ledger-vouching"
+
+[project.scripts]
+# `ledvouch doctor` — conformance suite v0 (B1)
+ledvouch = "ledvouch.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

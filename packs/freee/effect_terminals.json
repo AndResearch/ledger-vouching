@@ -1,0 +1,50 @@
+[
+  {
+    "tool": "freee_api_post",
+    "data_fields": ["$.body"],
+    "param_fields": ["$.service", "$.path", "$.query"],
+    "kind": "record",
+    "degrade": "block",
+    "receipt_fields": [
+      "$.deal.id",
+      "$.manual_journal.id",
+      "$.transfer.id",
+      "$.wallet_txn.id",
+      "$.invoice.id",
+      "$.expense_application.id"
+    ]
+  },
+  {
+    "tool": "freee_api_put",
+    "data_fields": ["$.body"],
+    "param_fields": ["$.service", "$.path", "$.query"],
+    "kind": "record",
+    "degrade": "block",
+    "receipt_fields": [
+      "$.deal.id",
+      "$.manual_journal.id",
+      "$.transfer.id",
+      "$.invoice.id",
+      "$.expense_application.id"
+    ]
+  },
+  {
+    "tool": "freee_api_patch",
+    "data_fields": ["$.body"],
+    "param_fields": ["$.service", "$.path", "$.query"],
+    "kind": "record",
+    "degrade": "block",
+    "receipt_fields": [
+      "$.deal.id",
+      "$.manual_journal.id",
+      "$.invoice.id"
+    ]
+  },
+  {
+    "tool": "freee_api_delete",
+    "data_fields": ["$.body"],
+    "param_fields": ["$.service", "$.path", "$.query"],
+    "kind": "record",
+    "degrade": "block"
+  }
+]

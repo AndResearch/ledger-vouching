@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv*/
+*.egg-info/
+.pytest_cache/
+# measurement/log artifacts, if any land here
+cells.jsonl
+*.log
