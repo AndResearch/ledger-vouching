@@ -10,6 +10,7 @@ authors:
   - family-names: Kouda
     given-names: Shinya
     affiliation: "AndResearch Inc."
+    orcid: "https://orcid.org/0009-0009-0227-3700"
 preferred-citation:
   type: unpublished
   title: "Ledger Vouching: Grounding Someone Else's Agent over the Wire"
@@ -17,6 +18,7 @@ preferred-citation:
     - family-names: Kouda
       given-names: Shinya
       affiliation: "AndResearch Inc."
+      orcid: "https://orcid.org/0009-0009-0227-3700"
   year: 2026
   month: 9
   doi: "10.5281/zenodo.22296273"
