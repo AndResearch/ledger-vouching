@@ -5,6 +5,11 @@
 *(License: Apache-2.0. Python package: `ledger-vouching`, import name
 `ledvouch`.)*
 
+**Paper:** Shinya Kouda, *Ledger Vouching: Grounding Someone Else's Agent over the Wire*,
+preprint v1 (2026) — [doi:10.5281/zenodo.22296273](https://doi.org/10.5281/zenodo.22296273).
+Tag `v0.0.1` is the artifact snapshot the paper describes; citation metadata is in
+[`CITATION.cff`](CITATION.cff).
+
 The reference implementation of **ledger vouching**: deterministic provenance
 enforcement for LLM outputs. The **ledger voucher** is an OpenAI-compatible proxy that
 enforces output grounding on **someone else's** agent loop, without touching its
@@ -330,6 +335,8 @@ Point an agent's `api_base` at `http://localhost:4000/v1`. Tests: `.venv/bin/pyt
 
 ## measurements
 
+The paper (preprint, [doi:10.5281/zenodo.22296273](https://doi.org/10.5281/zenodo.22296273))
+reports the measurements against tag `v0.0.1` of this repository.
 Reference measurements live in the internal measurement archive
 (2026-07-17 tau2-bench transparency rig arm A ≡ arm B Δ=0.000; 2026-07-17 Northwind
 9/9; 2026-07-21 induction rig 814/814 · 16/16 live; 2026-07-20 load).
